@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>🍌 Official Meal Request Form 🍞</title>
+<style>
+body {
+font-family: system-ui, -apple-system, sans-serif;
+background: linear-gradient(to bottom, #fffaf0, #ffe4c4);
+margin: 0;
+padding: 20px;
+color: #333;
+}
+.container {
+max-width: 500px;
+margin: 0 auto;
+background: white;
+padding: 30px;
+border-radius: 16px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+h1 {
+text-align: center;
+color: #d2691e;
+margin-bottom: 10px;
+}
+.subtitle {
+text-align: center;
+font-style: italic;
+color: #666;
+margin-bottom: 25px;
+}
+label {
+display: block;
+margin: 20px 0 6px;
+font-weight: 600;
+color: #444;
+}
+input, textarea, select {
+width: 100%;
+padding: 12px;
+border: 2px solid #deb887;
+border-radius: 8px;
+font-size: 1rem;
+box-sizing: border-box;
+}
+input:focus, textarea:focus, select:focus {
+outline: none;
+border-color: #d2691e;
+box-shadow: 0 0 0 3px rgba(210,105,30,0.2);
+}
+button {
+margin-top: 30px;
+width: 100%;
+padding: 14px;
+background: #d2691e;
+color: white;
+font-size: 1.2rem;
+font-weight: bold;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+transition: all 0.2s;
+}
+button:hover {
+background: #b34f00;
+transform: scale(1.02);
+}
+.banana {
+font-size: 2.5rem;
+text-align: center;
+margin: 10px 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="banana">🍌🍞</div>
+<h1>Official Meal Request Form</h1>
+<p class="subtitle">Because apparently love needs paperwork now 🥺</p>
+
+<form action="https://formsubmit.co/colaver96@gmail.com" method="POST">
+
+<label for="name">Your Name (the hungry one) *</label>
+<input type="text" id="name" name="name" placeholder="Robert" required value="Robert">
+
+<label for="request_date">Request Date *</label>
+<input type="date" id="request_date" name="request_date" required>
+
+<label for="requested_food">Requested Food / Dish *</label>
+<input type="text" id="requested_food" name="requested_food" placeholder="e.g., Banana Bread (extra moist please)" required>
+
+<label for="details">Additional Details / Special Instructions</label>
+<textarea id="details" name="details" rows="4" placeholder="e.g., Can you add chocolate chips? Delivery by 8pm? Emergency level: very hangry"></textarea>
+
+<label for="urgency">Urgency Level</label>
+<select id="urgency" name="urgency">
+<option value="normal">Normal (whenever you feel like it ❤️)</option>
+<option value="soon">Pretty please soon</option>
+<option value="urgent">I'm starving — urgent!</option>
+<option value="emergency">🍌 EMERGENCY BANANA BREAD PROTOCOL 🍌</option>
+</select>
+
+<button type="submit">Submit Request → Send to Chef Girlfriend</button>
+
+</form>
+</div>
+
+</body>
+</html>
